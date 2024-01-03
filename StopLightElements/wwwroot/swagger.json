@@ -1,0 +1,88 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Hello World Api - OpenAPI 3.0",
+    "description": "A description for the Hello World Api",
+    "contact": {
+      "email": "mail@rheintal-dotnet.com"
+    },
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/minimal-api": {
+      "get": {
+        "tags": [
+          "HelloWorld"
+        ],
+        "description": "Hello World from Minimal API Endpoint",
+        "operationId": "Hello World from Minimal Api",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/controller": {
+      "get": {
+        "tags": [
+          "HelloWorld"
+        ],
+        "summary": "Hello world from Controller",
+        "description": "Hello world from Controller",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
