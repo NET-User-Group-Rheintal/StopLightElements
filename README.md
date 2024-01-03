@@ -2,7 +2,7 @@
 
 [Stoplight Elements](https://stoplight.io/open-source/elements) is an Alternative to Swagger.
 
-This documentation explains how to integratie into a ASP.NET Core Web Api
+This documentation explains how to integrate into an ASP.NET Core Web Api
 
 ## Links
 * [Github](https://github.com/stoplightio/elements)
